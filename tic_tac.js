@@ -23,6 +23,11 @@ $(document).ready(function() {
 			if (turn >= 5) { 
 				checkForWinner();
 			}
+
+			if (turn === 9) {
+				prompt("no one wins")
+				playAgain();
+			}
 		});
 	};
 
@@ -56,5 +61,6 @@ $(document).ready(function() {
 	 		if (answer == "yes") {
 				location.reload();
 			}
+
 	};
 });

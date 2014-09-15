@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 			if (turn % 2 != 0 ) {
 				$('h4').text("Your turn, O");
-				$(this).text("O").css({color:"#F14C4D" }).off('click');
+				$(this).text("O").css({color:"#627D8f" }).off('click');
 				turnO.push(parseInt($(this).parent().attr('id')));
 				console.log(turnO);
 			} else {

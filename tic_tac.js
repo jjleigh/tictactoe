@@ -21,8 +21,11 @@ $(document).ready(function() {
 			}
 			turn++
 			if (turn === 10) {
-				prompt("no one wins")
-				playAgain();
+				var answer = prompt("no one wins")
+				if (answer == "yes") {
+					location.reload();
+				}
+					
 			}
 			if (turn >= 5) { 
 				checkForWinner();

@@ -21,7 +21,7 @@ $(document).ready(function() {
 			}
 			turn++
 			if (turn === 10) {
-				var answer = prompt("no one wins")
+				var answer = prompt("no one wins, would you like to playAgain")
 				if (answer == "yes") {
 					location.reload();
 				}

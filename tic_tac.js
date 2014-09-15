@@ -20,13 +20,12 @@ $(document).ready(function() {
 				console.log(turnX);
 			}
 			turn++
-			if (turn >= 5) { 
-				checkForWinner();
-			}
-
 			if (turn === 9) {
 				prompt("no one wins")
 				playAgain();
+			}
+			if (turn >= 5) { 
+				checkForWinner();
 			}
 		});
 	};

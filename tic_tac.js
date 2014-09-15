@@ -10,12 +10,12 @@ $(document).ready(function() {
 
 			if (turn % 2 != 0 ) {
 				$('h4').text("Your turn, O");
-				$(this).text("O").off('click');
+				$(this).text("O").css({color:"#F14C4D" }).off('click');
 				turnO.push(parseInt($(this).parent().attr('id')));
 				console.log(turnO);
 			} else {
 				$('h4').text("Your turn, X");
-				$(this).text("X").off('click');
+				$(this).text("X").css({color:"#F14C4D" }).off('click');
 				turnX.push(parseInt($(this).parent().attr('id')));
 				console.log(turnX);
 			}

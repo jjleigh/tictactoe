@@ -20,7 +20,7 @@ $(document).ready(function() {
 				console.log(turnX);
 			}
 			turn++
-			if (turn === 19) {
+			if (turn === 10) {
 				prompt("no one wins")
 				playAgain();
 			}

@@ -20,14 +20,14 @@ $(document).ready(function() {
 				console.log(turnX);
 			}
 			turn++
-			// if (turn === 10) {
-			// 	// checkForWinner();
-			// 	var answer = prompt("no one wins, would you like to play again")
-			// 	if (answer == "yes") {
-			// 		location.reload();
-			// 	}
+			if (turn === 10) {
+				// checkForWinner();
+				var answer = prompt("no one wins, would you like to play again")
+				if (answer == "yes") {
+					location.reload();
+				}
 					
-			// }
+			}
 			if (turn >= 5) { 
 				checkForWinner();
 			}
@@ -51,12 +51,13 @@ $(document).ready(function() {
 						winnerX = true
 						alert("X wins")
 						playAgain();
-					} else {
-						var answer = prompt("no one wins, would you like to play again")
-					if (answer == "yes") {
-					location.reload();
+					} 
 				}
-					}
+				if (turn === 10) {
+				var answer = prompt("no one wins, would you like to play again")
+				if (answer == "yes") {
+					location.reload();
+				}	
 			});
 	};
 

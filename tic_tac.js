@@ -22,11 +22,11 @@ $(document).ready(function() {
 			turn++
 			if (turn >= 5) { 
 				checkForWinner();
-				if (turn === 10) {
-					var answer = prompt("no one wins, would you like to play again");
-					if (answer == "yes") {
-						location.reload();
-					}
+				// if (turn === 10) {
+				// 	var answer = prompt("no one wins, would you like to play again");
+				// 	if (answer == "yes") {
+				// 		location.reload();
+				// 	}
 						
 				}
 			}
@@ -39,9 +39,9 @@ $(document).ready(function() {
 	function checkForWinner() {
 		winningCombination = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 				
-				winningCombination.forEach(function(combo){
 					var winnerO = false
 					var winnerX = false
+				winningCombination.forEach(function(combo){
 					if (turnO.indexOf(combo[0]) >= 0 && turnO.indexOf(combo[1]) >= 0 && turnO.indexOf(combo[2]) >= 0) {
 						winnerO = true
 						alert("O wins")

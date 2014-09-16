@@ -46,8 +46,11 @@ $(document).ready(function() {
 					} 
 					
 					if (turn === 10 && winnerO === false && winnerX === false) {
-						alert("no one wins, would you like to play again");
-						location.reload();
+						var answer = prompt("no one wins, would you like to play again?");
+						if (answer == 'yes') {
+							
+							location.reload();
+						}
 							
 					}
 			});

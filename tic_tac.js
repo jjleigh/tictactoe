@@ -22,12 +22,12 @@ $(document).ready(function() {
 			turn++
 			if (turn >= 5) { 
 				checkForWinner();
-						if (turn === 10) {
-							var answer = prompt("no one wins, would you like to play again");
-							if (answer == "yes") {
-								location.reload();
-							}		
-						}
+						// if (turn === 10) {
+						// 	var answer = prompt("no one wins, would you like to play again");
+						// 	if (answer == "yes") {
+						// 		location.reload();
+						// 	}		
+						// }
 			}
 		});
 	};

@@ -15,20 +15,20 @@ $(document).ready(function() {
 				console.log(turnO);
 			} else {
 				$('h4').text("Your turn, X");
-				$(this).text("X").css({color:"#6D8CD4" }).off('click');
+				$(this).text("X").css({color:"#6D8C4D" }).off('click');
 				turnX.push(parseInt($(this).parent().attr('id')));
 				console.log(turnX);
 			}
 			turn++
+			if (turn >= 5) { 
+				checkForWinner();
+			}
 			if (turn === 10) {
-				var answer = prompt("no one wins, would you like to play again")
+				var answer = prompt("no one wins, would you like to play again");
 				if (answer == "yes") {
 					location.reload();
 				}
 					
-			}
-			if (turn >= 5) { 
-				checkForWinner();
 			}
 		});
 	};

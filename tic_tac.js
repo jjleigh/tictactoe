@@ -15,13 +15,12 @@ $(document).ready(function() {
 				console.log(turnO);
 			} else {
 				$('h4').text("Your turn, X");
-				$(this).text("X").css({color:"#6D8C4D" }).off('click');
+				$(this).text("X").css({color:"#6D8CD4" }).off('click');
 				turnX.push(parseInt($(this).parent().attr('id')));
 				console.log(turnX);
 			}
 			turn++
 			if (turn === 10) {
-				// checkForWinner();
 				var answer = prompt("no one wins, would you like to play again")
 				if (answer == "yes") {
 					location.reload();
@@ -51,9 +50,7 @@ $(document).ready(function() {
 						winnerX = true
 						alert("X wins")
 						playAgain();
-					} 
-				}
-					
+					}
 			});
 	};
 

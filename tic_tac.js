@@ -45,15 +45,15 @@ $(document).ready(function() {
 						playAgain();
 					} 
 					
-					if (turn === 10 && winnerO === false && winnerX === false) {
-						var answer = prompt("no one wins, would you like to play again?");
-						if (answer == 'yes') {
+					// if (turn === 10 && winnerO === false && winnerX === false) {
+					// 	var answer = prompt("no one wins, would you like to play again?");
+					// 	if (answer == 'yes') {
+
+					// 		location.reload();
+					// 	}
 							
-							location.reload();
-						}
-							
-					}
-			});
+					// }
+				});
 	};
 
 	function playAgain() {

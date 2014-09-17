@@ -23,8 +23,8 @@ $(document).ready(function() {
 			if (turn >= 5) { 
 				checkForWinner();
 				if (turn === 10) {
-					var answer = prompt("no one wins, would you like to play again?");
-					if (answer == 'yes') {
+					var answer = confirm("no one wins, would you like to play again?");
+					if (answer == true ) {
 					location.reload();
 					}
 							
@@ -59,8 +59,8 @@ $(document).ready(function() {
 	// ask the player if they would like to play again. if no then leave the screen as if
 	// if yes then reset the screen and the variables
 
-		var answer = prompt("Would you like to play again?");
-	 		if (answer == "yes") {
+		var answer = confirm("Would you like to play again?");
+	 		if (answer == true) {
 				location.reload();
 			}
 
